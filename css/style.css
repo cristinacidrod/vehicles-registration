@@ -1,0 +1,191 @@
+/* GENERAL */
+
+body {
+    background-image: url("../images/road-mountains.jpeg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-color: #CCBCB4;
+    color: #CCBCB4;
+    overflow: hidden;
+    margin: 0;
+    font-family: 'Odibee Sans', cursive;
+}
+
+button {
+    background-color: #CCBCB4;
+    color: #4E474D;
+    border-radius: 5px;
+    border-color: transparent;
+    margin: 15px;
+    padding: 5px;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+button:hover {
+    background-color: #4E474D;
+    color: #CCBCB4;
+}
+
+h1 {
+    color: #4E474D;
+    font-family: 'Alfa Slab One', cursive;
+    text-align: center;
+}
+
+h1:hover {
+    color: #CCBCB4;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+i {
+    color: #fff;
+    padding: 10px;
+}
+
+/* MESSAGES */
+
+.messages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    font-family: 'Odibee Sans', cursive;
+    font-size: 2rem;
+    width: 100%;
+}
+
+.messageErrorCar {
+    color: #4E474D;
+    font-weight: bold;
+}
+
+.messageErrorWheels > {
+    color: #CCBCB4;
+    font-weight: bold;
+}
+
+.subtitleWheels {
+    padding: 3px;
+}
+
+/* CAR FORM */
+
+.carBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formCar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    background: #4E474D;
+    border-color: #4E474D;
+    border-radius: 5px;
+}
+
+.formCar > input {
+    border-radius: 5px;
+    border-color: transparent;
+    padding: 3px;
+}
+
+.formCar > label {
+    padding: 5px;
+    color: #CCBCB4;
+    font-family: 'Odibee Sans', cursive;
+}
+
+/* WHEELS FORM */
+
+.wheelsBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formWheels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 550px;
+    height: 425px;
+    padding: 10px;
+    background: #4E474D;
+    border-color: #4E474D;
+    border-radius: 5px;
+}
+
+.inputsBox {
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
+.brandDiameterBox {
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 5px;
+    border-color: transparent;
+    padding: 15px;
+}
+
+.inputW {
+    border-radius: 5px;
+    border-color: transparent;
+    padding: 2px;
+}
+
+.formWheels > label {
+    padding: 5px;
+    color: #CCBCB4;
+    font-family: 'Odibee Sans', cursive;
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
+/* SECTION RESULTS */
+
+.resultsBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sectionResults {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    height: 450px;
+    padding: 10px;
+    background: #4E474D;
+    border-color: #4E474D;
+    border-radius: 5px;
+}
+
+.wheelsResults {
+    display: flex;
+    flex-direction: row;
+}
+
+.wheelsResultsBox {
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.carResults, .frontResultsBox > p {
+    color: #fff;
+}

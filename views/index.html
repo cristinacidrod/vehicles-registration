@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cf52462e7e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>VEHICLE REGISTRATION</title>
+    <link rel="icon" type="png" sizes="16x16" href="../images/favicon-car.png">
+</head>
+
+<body>
+
+    <!-- Car form -->
+    <div id="carBox" class="carBox">
+        <h1 id="carTitle" class="title"> CREATE A CAR!</h1>
+        <form id="formCar" class="formCar">
+
+            <i class="fas fa-car"></i>
+
+            <label for="plate">Plate: </label>
+            <input id="plate" name="plate" type="text" placeholder="4 numbers and 3 letters.">
+
+            <label for="brand">Brand: </label>
+            <input id="brand" name="brand" type="text" placeholder="Enter the brand name.">
+
+            <label for="color">Color: </label>
+            <input id="color" name="color" type="text" placeholder="Enter the color name.">
+
+            <button id="btnCar" class="buttonCar" onclick="createCar(event)">GO!</button>
+
+        </form>
+
+        <div class="messages">
+            <p id="messageErrorCar" class="messageErrorCar"></p>
+        </div>
+
+    </div>
+
+    <!-- Wheels form -->
+    <div id="wheelsBox" class="wheelsBox">
+        <h1 id="wheelsTitle" class="title">ADD THE WHEELS!</h1>
+        <form id="formWheels" class="formWheels">
+
+            <!-- Front wheels -->
+            <h3><i class="fas fa-cog"></i> FRONT WHEELS <i class="fas fa-cog"></i></h3>
+
+            <div class="inputsBox">
+                <div class="brandDiameterBox">
+                    <label for="brandWheel1">Right Brand: </label>
+                    <input class="inputW" id="brandWheel1" name="brandWheel1" type="text"
+                        placeholder="Enter the brand name.">
+
+                    <label for="diameterWheel1">Right Diameter: </label>
+                    <input class="inputW" id="diameterWheel1" name="diameterWheel1" type="text"
+                        placeholder="Between 0.4 and 2.">
+                </div>
+            </div>
+
+            <div class="inputsBox">
+                <div class="brandDiameterBox">
+                    <label for="brandWheel2">Left Brand: </label>
+                    <input class="inputW" id="brandWheel2" name="brandWheel2" type="text"
+                        placeholder="Enter the brand name.">
+
+                    <label for="diameterWheel2">Left Diameter: </label>
+                    <input class="inputW" id="diameterWheel2" name="diameterWheel2" type="text"
+                        placeholder="Between 0.4 and 2.">
+                </div>
+            </div>
+
+            <!-- Back wheels -->
+            <h3><i class="fas fa-cog"></i> BACK WHEELS <i class="fas fa-cog"></i></h3>
+
+            <div class="inputsBox">
+                <div class="brandDiameterBox">
+                    <label for="brandWheel3">Right Brand: </label>
+                    <input class="inputW" id="brandWheel3" name="brandWheel3" type="text"
+                        placeholder="Enter the brand name.">
+
+                    <label for="diameterWheel3">Right Diameter: </label>
+                    <input class="inputW" id="diameterWheel3" name="diameterWheel3" type="text"
+                        placeholder="Between 0.4 and 2.">
+                </div>
+            </div>
+
+            <div class="inputsBox">
+                <div class="brandDiameterBox">
+                    <label for="brandWheel4">Left Brand: </label>
+                    <input class="inputW" id="brandWheel4" name="brandWheel4" type="text"
+                        placeholder="Enter the brand name.">
+
+                    <label for="diameterWheel4">Left Diameter: </label>
+                    <input class="inputW" id="diameterWheel4" name="diameterWheel4" type="text"
+                        placeholder="Between 0.4 and 2.">
+                </div>
+            </div>
+
+            <button id="btnWheel" class="buttonWheel" onclick="addWheels(event)">GO AGAIN!</button>
+
+            <div class="messages">
+                <p id="messageErrorWheels" clas="messageErrorWheels"></p>
+            </div>
+
+        </form>
+
+    </div>
+
+    <!-- Results -->
+    <div id="resultsBox" class="resultsBox">
+        <h1 id="resultsTitle" class="title">VEHICLE REGISTERED!</h1>
+        <section class="sectionResults">
+
+            <i class="fas fa-car-side"></i>
+
+            <!-- Car info -->
+            <h3>CAR INFORMATION:</h3>
+            <p id="carInfo" class="carResults"></p>
+
+            <!-- Wheels info -->
+            <div class="wheelsResults">
+
+                <!-- Front -->
+                <div class="wheelsResultsBox">
+                    <h3><i class="fas fa-cog"></i> FRONT WHEELS<i class="fas fa-cog"></i></h3>
+
+                    <div class="frontResultsBox">
+                        <p>RIGHT</p>
+                        <p id="dW1" name="diameterW1"></p>
+                        <p id="bW1" name="brandW1"></p>
+                    </div>
+
+                    <div class="frontResultsBox">
+                        <p>LEFT</p>
+                        <p id="dW2" name="diameterW2"></p>
+                        <p id="bW2" name="brandW2"></p>
+                    </div>
+                </div>
+
+                <!-- Back -->
+                <div class="wheelsResultsBox">
+                    <h3><i class="fas fa-cog"></i> BACK WHEELS<i class="fas fa-cog"></i></h3>
+
+                    <div class="frontResultsBox">
+                        <p>RIGHT</p>
+                        <p id="dW3" name="diameterW3"></p>
+                        <p id="bW3" name="brandW3"></p>
+                    </div>
+
+                    <div class="frontResultsBox">
+                        <p>LEFT</p>
+                        <p id="dW4" name="diameterW4"></p>
+                        <p id="bW4" name="brandW4"></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </div>
+
+    <!-- Vehicles scripts -->
+    <script src="../models/car.js"></script>
+    <script src="../models/wheel.js"></script>
+    <script src="../controllers/controller.js"></script>
+
+</body>
+
+</html>
