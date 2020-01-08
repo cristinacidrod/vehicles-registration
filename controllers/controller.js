@@ -88,9 +88,10 @@ function showResults() {
     var resultWheels = car.wheels;
     for (var i = 0; i <= 3; i++) {
         var wheelObject = resultWheels[i];
+        console.log(wheelObject, "console");
         var wheelsBrand = document.getElementById("bW" + (i + 1));
-        wheelsBrand.innerText = "Diameter: " + wheelObject.brand;
+        wheelsBrand.innerText = "Brand: " + wheelObject.brand;
         var wheelsDiameter = document.getElementById("dW" + (i + 1));
-        wheelsDiameter.innerText = "Brand: " + wheelObject.diameter;
-    } /* DISCLAIMER: they are reversed so I changed the innerText to match the right p in html to print them correctly */
+        wheelsDiameter.innerText = "Diameter: " + wheelObject.diameter;
+    }
 }
