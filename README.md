@@ -13,7 +13,7 @@ Link: #
 * HTML
 * CSS
 * TypeScript
-* JavaScript
+* Compiled JavaScript
 
 ---
 
